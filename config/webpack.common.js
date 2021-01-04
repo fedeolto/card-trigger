@@ -58,7 +58,27 @@ module.exports = {
   module: {
     rules: [
       // JavaScript: Use Babel to transpile JavaScript files
-      { test: /\.js$/, use: ['babel-loader'] },
+      {
+        test: /\.js$/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: [
+                  '@babel/preset-env',
+                {
+                  'plugins': [
+                      '@babel/plugin-proposal-class-properties'
+                  ]
+                }
+              ],
+              plugins: [
+                "@babel/plugin-syntax-dynamic-import"
+              ]
+            }
+
+          },
+        ]},
 
       // Images: Copy image files to build folder
       { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },
