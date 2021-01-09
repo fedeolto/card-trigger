@@ -1,4 +1,5 @@
 import { CardEvents } from "../view/cardEvents";
+import { cardIdAttributeName } from "../constants";
 
 export class CardController {
   init = () => {
@@ -7,7 +8,7 @@ export class CardController {
     const cardRemover = document.querySelector("#remover");
 
     cardTrigger.addEventListener("click", (e) => {
-      const cardId = e.target.getAttribute("data-sku");
+      const cardId = e.target.getAttribute(cardIdAttributeName);
       cardEvents.addCard(cardId);
     });
 
