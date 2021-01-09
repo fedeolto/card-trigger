@@ -24,4 +24,8 @@ export class DisplayedCards {
   addCard = (card) => {
     displayedCards.push(card);
   };
+
+  getCardIds = () => {
+    return displayedCards.map((card) => card.id);
+  };
 }
