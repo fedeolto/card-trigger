@@ -26,7 +26,7 @@ export class CardEvents {
     const cardDao = new CardDao();
     let currentCardContainer;
     let currentCardRemover;
-    const cardsHolder = document.querySelector(`#${CARDS_HOLDER_ID}}`);
+    const cardsHolder = document.querySelector(`#${CARDS_HOLDER_ID}`);
 
     if (
       displayedCards.getLength() === 0 ||
