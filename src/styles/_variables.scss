@@ -5,7 +5,7 @@ $theme-colors: (
   "peach-crayola": #f7c59f,
   "beige": #efefd0,
   "usafa-blue": #004e89,
-  "sapphire-blue": #1a659e,
+  "pale-cerulean": #96c8ee,
 );
 
 $font-size: 1rem;
@@ -14,9 +14,5 @@ $background-color: map-get($theme-colors, "beige");
 $font-color: map-get($theme-colors, "usafa-blue");
 $page-width: 650px;
 
-/*palette1*/
-$charcoal: #264653;
-$persian-green: #2a9d8f;
-$orange-yellow-crayola: #e9c46a;
-$sandy-brown: #f4a261;
-$burnt-sienna: #e76f51;
+$post-list-item-color: map-get($theme-colors, "usafa-blue");
+$post-list-item-background-color: map-get($theme-colors, "pale-cerulean");
