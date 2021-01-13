@@ -24,7 +24,8 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-self: center;
-  height: 100vh;
+  //height: 100vh;
+  // TODO clean this file
 }
 
 ul.post-list {
@@ -55,4 +56,27 @@ ul.post-list {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+#cards-holder {
+  height: 600px;
+  width: 300px;
+}
+
+.card-item {
+  background-color: $card-item-background-color;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button.button-remover,
+a.button-remover {
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: $button-background-color;
+  color: $post-list-item-color;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid $post-list-item-color;
 }

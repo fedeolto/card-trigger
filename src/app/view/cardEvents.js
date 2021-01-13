@@ -36,12 +36,14 @@ export class CardEvents {
         currentCardContainer = document.createElement("div");
 
         currentCardContainer.setAttribute("id", `${CARD_ID_PREFIX}${cardId}`);
+        currentCardContainer.setAttribute("class", "card-item");
 
         currentCardContainer.textContent = card.title + card.body + card.id;
 
         currentCardRemover = document.createElement("button");
         currentCardRemover.setAttribute("id", `${BUTTON_ID_PREFIX}${cardId}`);
         currentCardRemover.setAttribute("text", REMOVE_LABEL);
+        currentCardRemover.setAttribute("class", "button-remover");
 
         currentCardRemover.addEventListener("click", (e) => {
           const buttonCardId = e.target.getAttribute("id");

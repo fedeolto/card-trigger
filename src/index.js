@@ -28,3 +28,4 @@ const cardController = new CardController();
 cardController.init();
 
 // TODO clean this file
+// TODO resolve FOUC problem
