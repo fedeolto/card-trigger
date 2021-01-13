@@ -1,7 +1,6 @@
 // Test import of a JavaScript function
 import "regenerator-runtime/runtime";
 import { example } from "./js/example";
-import { CardEvents } from "./app/view/cardEvents";
 
 // Test import of an asset
 import webpackLogo from "./images/webpack-logo.svg";
@@ -10,6 +9,7 @@ import webpackLogo from "./images/webpack-logo.svg";
 import "./styles/index.scss";
 
 // Appending to the DOM
+/*
 const logo = document.createElement("img");
 logo.src = webpackLogo;
 
@@ -18,6 +18,7 @@ heading.textContent = example();
 
 const app = document.querySelector("#root");
 app.append(logo, heading);
+ */
 
 /* -------------------------- -----------------------------*/
 
@@ -25,3 +26,5 @@ import { CardController } from "./app/controller/cardController";
 
 const cardController = new CardController();
 cardController.init();
+
+// TODO clean this file
